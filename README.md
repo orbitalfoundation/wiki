@@ -8,7 +8,7 @@ At a foundation level this work leverages and is highly indebited to the work of
 
 Beyond this we see an opportunity to make data objects into first class citizens. Public ledgers and services such as Metamask allow for self signed identity, and help reduce the need for separate accounts and passwords on each service. We also see a role for social trust graphs similar to Keybase in order to help filter and score content and to keep out bad actors. We also see https://solidproject.org/ as an important capability we want to provide.
 
-For more thoughts here please see our [vision statement](/logs/20201001Vision.md)
+For more thoughts here please see our [vision statement](logs/20201001Vision.md)
 
 ## Roadmap
 
