@@ -1,37 +1,9 @@
-## Welcome to GitHub Pages
+# Orbital
 
-You can use the [editor on GitHub](https://github.com/orbitalweb/orbitalweb.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+We're exploring the future of web interfaces. Join us!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Our goal is to provide the web with the same kind of rich app persistence and performance that we're used to with native desktop applications. We're leveraging Servo, Rust, Cargo and other tools to help provide users with a user agent that can persistently engage the world on their behalf. We're interested in fostering a healthy ecosystem for all participants, where users can directly engage with content creators and publishers and where content can be aggregated, filtered and scored against trust graphs, and where multiple applications can paint to the same view. Our focus is the future of the web with an emphasis on 3D and AR enhanced views of reality.
 
-### Markdown
+[<img src="http://www.google.com.au/images/crystal.webp">](#)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/orbitalweb/orbitalweb.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
