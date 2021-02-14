@@ -14,9 +14,9 @@ For more thoughts here please see our [vision statement](logs/20201001Vision.md)
 
 Please see our [roadmap document](logs/20210115RoadMap.md)
 
-## Chat with us on the socials
+## Chat with us on discord
 
-https://discord.gg/eRsBbcXjzX
+Please join us on [Discord](https://discord.gg/eRsBbcXjzX)
 
 ## Downloads
 
