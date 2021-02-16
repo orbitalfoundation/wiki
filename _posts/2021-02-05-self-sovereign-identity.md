@@ -62,6 +62,12 @@ What's really missing from the fabric of the net here is simple direct low overh
 
 If creators and consumers can form direct relationships with each other then this can shift other behaviors on the web. Today advertising dominates because it is a stable easy way to monetize attention. Advertising has some unpleasant or undesirable side effects however. There is an arms race between advertisers and browser creators - one that is unwinnable by either party - but one that has made the experience of browsing the web poor for ordinary users. If creators and consumers can foster direct relationships (by any mechanism) then the incentives behind advertising may be diminished.
 
-## 5. Ecosystem Perspective
+## 5. Decentralized Web
+
+Of course people are not necessarily going to be hosting their own data on their own devices. There are still good arguments for cloud hosting. With private keys however users can store remote while still retaining control, and can choose to expose portions of their data to others if they wish. Millions of browsers working together can become a capability for the people as a whole to have a shared storage capability that is entirely decentralized and redundant. People who need high performance data access can use centralized services as well. We've seen these conversations emerging in projects such as https://solidproject.org/about and they have been top of mind at many organizations https://hacks.mozilla.org/2018/07/introducing-the-d-web/ . It isn't that this is new, but rather that without a solid foundation of identity it becomes unduly hard.
+
+## 6. Ecosystem Perspective
+
+In essence the web isn't just consumers who use thin clients to go visit service providers who run walled gardens that host data and code. Instead the web can be a sea of user agents, a sea of data, and a sea of other parties - all co-existing.
 
 The web is best thought of as a complex ecosystem with many participants at all scales. We will always see internet influencers, taste makers, advertisers, large publishers, subscription services, silo account services, walled gardens. But in a healthy ecosystem these are just part of a world where users themselves are first class entities; able to approach service providers with direct transactions, able to withdraw their support, and take their data with them if they wish. In such an ecosystem we diminish some of the pathological behaviors and some of the perverse incentives.
