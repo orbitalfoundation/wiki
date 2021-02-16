@@ -15,7 +15,9 @@ These conversations however don't entirely reflect new points of view. When we t
 
 ## 1. High Performance
 
-Using Web Assembly, WebGPU, Rust and other emerging standards a PWA can in fact reach the same performance as any native computation. It's no longer a case of a web app being slower or jerkier or less pleasant to use.
+None of what is discussed below is possible without the work of manh others. Even being able to have these ideas is indebited to the work of many existing technologies. We’re using Servo, Rust and Cargo to support durable persistent apps on the client, and as a result benefit from emerging standards such as WebGPU, WebXR, and process and filesystem sandboxing. Our interest here is supporting durable persistent first class apps within the browser; so we are creating a new persistence model for rich apps.
+
+The fact is today that using Web Assembly, WebGPU, Rust and other emerging standards a PWA can reach the same performance as any native computation. It's no longer a case of a web app being slower or jerkier or less pleasant to use. And there are compelling reasons to be able to do so.
 
 What is needed at this point isn't performance, but a sandboxing model of access to local computing resources that insulates applications from each other while allowing access to critical resources such as say bluetooth. Effectively the browser *does* start to move in the direction of being an Operating System or at least a Desktop again.
 
@@ -33,13 +35,28 @@ But a new possibility takes us in a different direction. We rely on centralized 
 
 We want to avoid building an operating system, but we also want to avoid the assumption that a browser is a 2d layout engine. Instead we want to appreciate it more as a common core for a variety of rendering engines. We can start to think of these capabilities as "libraries" or tools. Ideas around package and dependency management come to the foreground. These are ideas that we are very used to with operating systems. An operating system doesn't think of a 2d layout engine as "special" - it is just another thread that is running - based on some library - produced based on the users whim.
 
-## 4. Code and Data
+## 4. Code and Data are one
 
 Although we tend to think of agents as distinct from the data they manage - really these are both similar. Ultimately you have some personal cloud of digital artifacts - some of these may be photographs, some of these may be books that other people have written that you like. You may be running some personal software agents (such as a drawing tool or an aggregator) and you may also be hosting some other peoples data - and distributing some of your data for redundancy as well.
 
 ## 5. Browsers working together
 
-Ultimately we want to create a computational environment where millions of browsers can work together to help users solve their problems. These are services run by the users for the users. These browsers can collaborate on developing a shared understanding of a website, pre-scanning it and digesting it and optimizing it for future page loads. Or even allowing social markup of websites - to correct errors in a website itself. There are all kinds of powers that you can have when you start to see the browsers together as a single computational fabric. To do that we need to enable browsers to durably run code received over the web in a safe trustworthy way.
+Ultimately we want to create a computational environment where millions of browsers can work together to help users solve their problems. These are services run by the users for the users. These browsers can collaborate on developing a shared understanding of a website, pre-scanning it and digesting it and optimizing it for future page loads. Or even allowing social markup of websites - to correct errors in a website itself. There are all kinds of powers that you can have when you start to see the browsers together as a single computational fabric. To do that we need to enable browsers to durably run code received over the web in a safe trustworthy way. But the real power is when we start pointing our web browsers at the real world.
+
+## 6. Future Web as aggregator
+
+When you look towards the future where the web is part of a heads up display, where your browser is doing semantic partitioning and analysis of the world around you and where millions of other browsers are doing the same thing - then we see a significant inversion from today. It is the clients that are doing the sense making and sharing that knowledge with each other together.
+
+In a persistent agent model the world becomes very different. A browser becomes a lens, like a smart car, that is aggregating, understsanding, and acting on behalf of the user intelligently. It's less about bringing up a browser to look up something, and more like the browser is an everyday part of life.
+
+## 7. Resolving competing agent views
+
+Of course the famous dystopian view of the future of the web is one where these agents don't cooperate, or where you don't control them. [ https://www.youtube.com/watch?v=YJg02ivYzSs ] . 
+
+We do believe web interfaces will start to blend with the real world, that there will be virtual actions or verbs attached to everyday objects, and that the browser as your user-agent will in some ways invert the current display architectures that we are used to.
+
+Instead of each app rendering to a separate page your user agent will arbitrate and filter many apps attempting to render to the same view. We believe this will create new challenges for accessibility and for filtering and sense-making and that this needs to be explored.
+
 
 
 
