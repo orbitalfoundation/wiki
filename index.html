@@ -3,6 +3,7 @@
 <head>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.4/web3.min.js"></script>
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 
@@ -27,10 +28,95 @@
 <script src="/libs/mapbox-gl-geocoder.min.js"></script>
 
 <style>
-  body,h1,h2,h3,p,div {
-    background:#f8f8f8;
-  }
 
+:root {
+--mycardwidth:800px;
+--mycardpadding:8px;
+--mycardmargin:8px;
+--mypadding:4px;
+--myflexgap:4px;
+}
+
+body,h1,h2,h3,p,div {
+ background:#f8f8f8;
+ font-family: 'Questrial', sans-serif;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+
+:root {
+  --mynavheight:48px;
+  --mynavpadding:4px;
+  --mynavshadowbase:5px;
+}
+
+.nav {
+  position:relative;
+  display:block;
+  height:var(--mynavheight);
+}
+
+.navshadow {
+  box-shadow:0px 5px 5px #cccccc;
+  margin-bottom:var(--mynavshadowbase);
+  position:fixed;
+  width:100%;
+  top:0;
+}
+
+  
+@media screen and (max-width:800px) {
+  .navcontent {
+    width:100%;
+  }
+}
+
+.navcontent a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  xfilter: grayscale(80%);
+}
+
+ .page {
+  width:100%;
+  height:100%;
+  overflow:auto;
+  display:block;
+}
+
+/* a content area that occupies a full page but is conceptually not a 'card' kind of concept */
+.sugarpage {
+  display:block;
+  box-sizing: border-box;
+  width:var(--mycardwidth);
+  height:100%;
+  margin-top:var(--mycardmargin);
+  margin-bottom:var(--mycardmargin);
+  margin-left:auto;
+  margin-right:auto;
+  padding:var(--mycardpadding);
+}
+
+.sugarpage p {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width:800px) {
+  .sugarpage {
+    width:100%;
+  }
+}
+
+  
 .button {
 display:inline-block;
 font-family: 'Questrial', sans-serif;
@@ -52,8 +138,11 @@ box-shadow:  5px 5px 10px #e3e3e3, -5px -5px 10px #ffffff;
 
 
 <body>
+  
+<div class=page>
+<div class=sugarpage>
 
-<img src="https://orbitalweb.github.io/crystal.webp></img>
+<img src="https://orbitalweb.github.io/crystal.webp"></img>
 <h1>What will the web look like in 10 years?</h1>
 
 <p>We believe web interfaces will start to blend with the real world, that there will be virtual actions or verbs attached to everyday objects, and that the browser as your user-agent will in some ways invert the current display architectures that we are used to. Instead of each app rendering to a separate page your user agent will arbitrate and filter many apps attempting to render to the same view. We believe this will create new challenges for accessibility and for filtering and sense-making and that this needs to be explored.
@@ -67,7 +156,7 @@ At a foundation level this work leverages and is highly indebited to the work of
 Beyond this we see an opportunity to make data objects into first class citizens. Public ledgers and services such as Metamask allow for self signed identity, and help reduce the need for separate accounts and passwords on each service. We also see a role for social trust graphs similar to Keybase in order to help filter and score content and to keep out bad actors. We also see https://solidproject.org/ as an important capability we want to provide.
 </p>
 
-<h2>This is our emphasis</h2>
+<h2>Our emphasis</h2>
 
 <a class="button">Persistent Web Apps</a>
 <a class="button">3D Forward Design</a>
@@ -80,7 +169,18 @@ Beyond this we see an opportunity to make data objects into first class citizens
 
 <h2>Chat with us on discord</h2>
 
-<p>Please join us on Discord</p>
+<p>Please join us on <a href="https://discord.gg/eRsBbcXjzX">Discord</a></p>
+
+<h2>Recent Activity</h2>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
 
 <h2>Downloads</h2>
 
@@ -90,7 +190,9 @@ Stay Tuned!
 
 All the work here is published under The Apache Open Source License. This is a permissive free software license written by the Apache Software Foundation. It allows users to use the software for any purpose, to distribute it, to modify it, and to distribute modified versions of the software under the terms of the license, without concern for royalties. Please see the attached license file in this folder.
 
-
+  </div> 
+  </div>
+  
 </body>
 </html>
 
