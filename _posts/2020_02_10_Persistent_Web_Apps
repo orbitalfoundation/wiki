@@ -1,0 +1,48 @@
+---
+layout: post
+title:  Persistent Web Agents
+category: Philosophy
+tags: [ssi]
+---
+
+# What do you mean by Persistent Web Agents?
+
+Web developers often use a term "Persistent Web App" to talk about an idea of a rich client application being delivered to the client device and then running locally and persistently. In this idea a user doesn't have to reload an app again once they fetched it. Often this is seen as a way to have some of the capabilities that App Stores provide, where they let you have a rich high performance client experience, online and offline. A good example of a rich client app is https://figma.com . It looks like a web page but it is largely an application.
+
+At the same time the web has been fairly resistant to durable apps on the client. There was a FirefoxOS effort which sought to build a web centric desktop, but it didn't succeed. There are some formalisms around Persistent Web Apps but they haven't taken off either and in some cases are being deprecated. And as a whole the web has been "good enough" for most of us as is. If you look around the net you can easily see quite a bit of conversation about the topic - for and against: https://levelup.gitconnected.com/progressive-web-applications-the-trend-of-2020-pros-and-cons-301bab02d673
+
+These conversations however don't entirely reflect new points of view. When we talk about durable persistent execution on the client we mean so much more than merely "a nicer user experience". Here are a few implications, and why we think weaving these ideas into the fundamental fabric of this browser is important.
+
+## 1. High Performance
+
+Using Web Assembly, WebGPU, Rust and other emerging standards a PWA can in fact reach the same performance as any native computation. It's no longer a case of a web app being slower or jerkier or less pleasant to use.
+
+What is needed at this point isn't performance, but a sandboxing model of access to local computing resources that insulates applications from each other while allowing access to critical resources such as say bluetooth. Effectively the browser *does* start to move in the direction of being an Operating System or at least a Desktop again.
+
+## 2. Truly Durable
+
+The PWA concept these days is fairly weak. A strong PWA concept is one where an app is truly visible as an object. All if its data is truly visible and manageable. We are used to this with our desktops. We have a good understanding of files, a file system, being able to navigate that file system (on the desktop) and manage, organize, delete and otherwise prune our digital gardens. Any effort to offer a richer browser capability needs to offer this as well.
+
+## 2. Distributed Computation
+
+But a new possibility takes us in a different direction. We rely on centralized silos to effectively do work for us - to aggregate, organize, search and filter content. If these agents can be distributed over other computation instances - over the web as a whole - then the entire web (including all the browsers browsing it) become a computational fabric that can act on behalf of the user. You can fire off tasks that willfully continue to represent your will, and have them circle back when you are online - or you can dedicate some of your own devices computation to helping other people with their tasks.
+
+## 3. Reducing 2D from being a first class citizen
+
+2D graphics, layout and text is a complex topic, but one that can somewhat be represented by layout grammars such as HTML. We have "good enough" representations of 2d that HTML has been able to succeed. When you think about it however 2D layout is really just a variation of 3D layout. Most 3d interactive games are internally described as directed acyclic graphs - like a christmas tree decorated with ornaments. The problem is that once you start developing in 3D there's no single grammar that can capture that space; it is too rich. Each developer has their own grammar. There is a possibility of a lingua franca but the main thing that developers want is to be able to persistently ship their own product to the client, and have it stay there and run there.
+
+We want to avoid building an operating system, but we also want to avoid the assumption that a browser is a 2d layout engine. Instead we want to appreciate it more as a common core for a variety of rendering engines. We can start to think of these capabilities as "libraries" or tools. Ideas around package and dependency management come to the foreground. These are ideas that we are very used to with operating systems. An operating system doesn't think of a 2d layout engine as "special" - it is just another thread that is running - based on some library - produced based on the users whim.
+
+## 4. Code and Data
+
+Although we tend to think of agents as distinct from the data they manage - really these are both similar. Ultimately you have some personal cloud of digital artifacts - some of these may be photographs, some of these may be books that other people have written that you like. You may be running some personal software agents (such as a drawing tool or an aggregator) and you may also be hosting some other peoples data - and distributing some of your data for redundancy as well.
+
+## 5. Browsers working together
+
+Ultimately we want to create a computational environment where millions of browsers can work together to help users solve their problems. These are services run by the users for the users. These browsers can collaborate on developing a shared understanding of a website, pre-scanning it and digesting it and optimizing it for future page loads. Or even allowing social markup of websites - to correct errors in a website itself. There are all kinds of powers that you can have when you start to see the browsers together as a single computational fabric. To do that we need to enable browsers to durably run code received over the web in a safe trustworthy way.
+
+
+
+
+
+
