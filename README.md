@@ -1,29 +1,3 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.4/web3.min.js"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-<meta name="monetization" content="$coil.xrptipbot.com/5ra3zZ_aRIS8CUUFzZcHcQ">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js"></script>
-<style>
-body,h1,h2,h3,p,div {
-background:#f8f8f8;
-font-family: 'Questrial', sans-serif;
-word-break: break-word;
-}  
-.button {
-display:inline-block;
-font-family: 'Questrial', sans-serif;
-box-sizing:border-box;
-margin:10px;
-padding: 32px 64px;
-border: 0px;
-color:#7070f0;
-text-decoration:none;
-font-size:1.5em;
-border-radius: 12px;
-background: #f0f0f0;
-box-shadow:  5px 5px 10px #e3e3e3, -5px -5px 10px #ffffff;
-}
-</style>
 
 ![Logo](crystal.webp)
 
